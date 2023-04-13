@@ -1,0 +1,32 @@
+.text-input-highlight-container {
+  position: relative;
+}
+
+.text-input-highlight-container .text-input-element {
+  background: none;
+  color: transparent;
+  caret-color: #333;
+  position: relative;
+  margin: 0;
+  z-index: 2;
+}
+
+.text-input-highlight-container .text-highlight-element {
+  overflow: hidden !important;
+  word-break: break-word;
+  white-space: pre-wrap;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1;
+}
+
+.text-input-highlight-container .text-highlight-tag {
+  border-radius: 8px;
+  padding: 1px 3px;
+  margin: -1px -3px;
+  overflow-wrap: break-word;
+}
