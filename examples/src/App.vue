@@ -15,7 +15,7 @@ export default defineComponent({
   setup() {
     const tags = ref([])
     const text = ref(
-      'liyunhe6@jd.com;wangeditor@qq.com'
+      'liyunhe6@example.com;wangeditor@qq.com'
     )
     const tagClicked = ref()
 
@@ -97,7 +97,7 @@ export default defineComponent({
     function jdEmail(value) {
       var atPosition = value.lastIndexOf('@')
       var domain = value.substring(atPosition + 1)
-      return domain.toLowerCase().trim() === 'jd.com'
+      return domain.toLowerCase().trim() === 'example.com'
     }
   },
 })
